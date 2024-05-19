@@ -28,18 +28,24 @@ const Admin = () => {
         {/* Sidebar Content */}
         <div className="p-4">
           <h1 className="text-2xl font-bold">Admin Dashboard</h1>
-          {/* Add more sidebar items as needed */}
-          <ul className="mt-4">
-            <li className="mb-2">
+  
+          <br/>
+            <li >
               <Link className="hover:text-gray-300" href="/Upload">
                 Project Upload
               </Link>
-            </li>
+              </li>
+              <li>
+              <Link className="hover:text-gray-300" href="/Cv">
+               CV Upload
+              </Link>
+              </li>
+            
            
             
             
             {/* Add more sidebar items as needed */}
-          </ul>
+          
         </div>
       </div>
 

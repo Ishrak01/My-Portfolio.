@@ -1,4 +1,5 @@
 import { Inter } from "next/font/google";
+import { Toaster } from "react-hot-toast";
 import Navbar from "./components/Navbar";
 import "./globals.css";
 import ReduxProvider from "./redux/provider/reduxProvider";
@@ -15,7 +16,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className} >
        <ReduxProvider>
-          <Navbar/>
+        <Toaster/><Navbar/>
+          
           
         
         {children}

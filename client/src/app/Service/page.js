@@ -3,12 +3,12 @@
 const ServicePage = () => {
   return (
     <div className="bg-[#111827] min-h-screen">
-      <div className="container mx-auto p-6">
+      <div className="md:mx-[120px] mx-5 container  p-6">
         <h1 className="text-3xl text-white font-bold mb-4">My Services</h1>
         <p className="text-gray-300 mb-6">Explore the web development services I offer:</p>
 
         {/* Add your list of services here */}
-        <ul className="list-disc ml-6 text-gray-300">
+        <ul className="list-disc ml-6 text-left text-gray-300">
           <li>Responsive Website Development</li>
           <li>React.js and Next.js Development</li>
           <li>Full Stack Development</li>

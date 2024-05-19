@@ -6,16 +6,18 @@ const SkillPage = () => {
     { name: 'React.js', level: '75%' },
     { name: 'Next.js', level: '70%' },
     { name: 'Redux Toolkit', level: '70%' },
+    { name: 'Node.js/Express.js', level: '75%' },
     { name: 'MongoDB', level: '75%' },
+    { name: 'MySQL', level: '70%' },
     { name: 'HTML', level: '85%' },
     { name: 'CSS', level: '80%' },
     { name: 'Tailwind CSS', level: '75%' },
-    // Add more skills as needed
+  
   ];
 
   return (
-    <div className="bg-[#111827] min-h-screen py-10">
-      <div className="container text-white mx-auto">
+    <div className=" bg-[#111827] min-h-screen py-10">
+      <div className="md:mx-[120px] mx-10 text-white ">
         <h1 className="text-4xl font-bold mb-4">Skills</h1>
         <ul className="list-disc ml-4">
           {skills.map((skill, index) => (
