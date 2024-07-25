@@ -1,6 +1,7 @@
 
 "use client"
 
+import Image from "next/image";
 import Link from "next/link";
 import { useDeleteByIdMutation, useGetDataQuery } from "../redux/feature/projects/projectsApi";
 ;
@@ -67,7 +68,7 @@ const Admin = () => {
             data.map((products) => (
               <tr key={products.id}>
                 <td className="border border-gray-300 px-4 py-2">
-                  <img className="h-10 w-10" src={products.image} />
+                  <Image className="h-10 w-10" src={products.image} alt="image" />
                 </td>
                 <td className="border border-gray-300 px-4 py-2">
                   {products.name}

@@ -34,7 +34,7 @@ export default function Navbar() {
       const url = window.URL.createObjectURL(new Blob([response.data]));
       const link = document.createElement('a');
       link.href = url;
-      link.setAttribute('download', 'filename.extension'); // Use the actual file name and extension
+      link.setAttribute('download', 'Hasin Ishrak CV.pdf'); 
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
@@ -67,7 +67,7 @@ export default function Navbar() {
 
             <button onClick={toggleNavbar}><MenuIcon /></button>
             {!open && (
-              <div className='flex absolute space-y-4 border my-8 flex-col bg-[#111A28]  font-semibold text-xs text-white justify-center   '>
+              <div className='flex absolute space-y-4 border rounded-sm p-2 my-10 right-4 flex-col bg-[#111A28] font-semibold text-xs text-white justify-center items-start'>
                 <Link href='/Skill'>Skill</Link>
                 <Link href='/Projects'>Projects</Link>
                 <Link href='/Service'>Services</Link>

@@ -10,7 +10,7 @@ import { useCreateMutation } from "../redux/feature/projects/projectsApi";
 
 const Upload = () => {
   const [name, setName] = useState("");
- 
+
   const [image, setImage] = useState("");
   const [url, setUrl] = useState("");
 
@@ -18,33 +18,33 @@ const Upload = () => {
 
 
 
- 
- 
+
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     create({
       name,
-    image,
-    url
-      
+      image,
+      url
+
     });
   };
-useEffect(() => {
-  if(data){
-    alert("product uploaded")
-  }
+  useEffect(() => {
+    if (data) {
+      alert("product uploaded")
+    }
 
-  
-}, [data])
 
- 
+  }, [data])
 
-  
+
+
+
 
   return (
-  <form onSubmit={handleSubmit} className="max-w-md mx-auto mt-8 p-4 h-screen text-black bg-gray-100 shadow-md rounded-md">
+    <form onSubmit={handleSubmit} className="max-w-md mx-auto mt-8 p-4 h-screen text-black bg-gray-100 shadow-md rounded-md">
       <h2 className="text-2xl font-bold mb-4">Upload Projects</h2>
       <div className="mb-4">
         <label htmlFor="name" className="block text-sm font-semibold mb-2">
@@ -62,7 +62,7 @@ useEffect(() => {
       </div>
       <div className="mb-4">
         <label htmlFor="description" className="block text-sm font-semibold mb-2">
-         image
+          image
         </label>
         <textarea
           id="description"
@@ -75,7 +75,7 @@ useEffect(() => {
       </div>
       <div className="mb-4">
         <label htmlFor="price" className="block text-sm font-semibold mb-2">
-     url
+          url
         </label>
         <input
           type="String"
@@ -87,17 +87,17 @@ useEffect(() => {
           required
         />
       </div>
-    
-    
+
+
       <button
         type="submit"
         className="bg-blue-500 text-black px-6 py-2  rounded-md hover:bg-blue-600 focus:outline-none"
       >
-        Upload 
+        Upload
       </button>
     </form>
 
-);
+  );
 };
 
 export default Upload;

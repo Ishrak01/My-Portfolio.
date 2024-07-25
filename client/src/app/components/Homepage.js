@@ -6,11 +6,11 @@ import TypewriterComponent from 'typewriter-effect';
 import hsm from './hsm.jpg';
 
 import hsm3 from './hsm3.jpg';
-import hsm4 from './hsm4.jpg';
+
 import hsm5 from './hsm5.jpg';
 import hsm6 from './hsm6.jpg';
 
-const photos = [hsm, hsm3, hsm4, hsm5, hsm6]
+const photos = [hsm, hsm3, hsm5, hsm6]
 
 
 
