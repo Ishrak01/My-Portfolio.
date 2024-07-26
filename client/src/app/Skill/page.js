@@ -1,4 +1,3 @@
-// components/SkillPage.js
 
 const SkillPage = () => {
   const skills = [

@@ -80,7 +80,7 @@ export default function Homepage() {
           <button><Link href='/Projects'><button className='inline-block px-2 py-1 border rounded-sm hover:bg-white'>Projects</button></Link></button>
            
           <button><Link href='/Contact'><button className='inline-block px-2 py-1 border 
-          rounded-sm hover:bg-white '>HIRE ME</button></Link></button>
+          rounded-sm hover:bg-white  '>HIRE ME</button></Link></button>
         </div>
       </div>
 

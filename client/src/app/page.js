@@ -8,7 +8,7 @@ import Homepage from "./components/Homepage";
 
 export default function Home() {
   return (
-   <div className=" h-screen bg-[#111A28]">
+   <div className=" h-screen bg-[#111827]">
     <div><Homepage/></div>
     <div className="block sm:hidden"><br /></div>
     <div className="block sm:hidden"><br /></div>

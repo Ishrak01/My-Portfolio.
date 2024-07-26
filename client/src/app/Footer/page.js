@@ -2,7 +2,7 @@
 
 const Footer = () => {
   return (
-    <div className="bg-[#1F2937] text-white py-6">
+    <div className="bg-[#111827] text-white py-6">
       <div className="md:mx-[120px] mx-10 text-center">
         <div className="flex justify-center items-center mb-4">
           <a href="https://www.facebook.com/Hasin.Ishrak.Hisham/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-500 mx-2">

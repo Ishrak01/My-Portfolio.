@@ -86,12 +86,12 @@ app.use('/', upload.single('file'), fileRoute)
 
 
 app.post('/send', (req, res) => {
-  const { name, email, message } = req.body;
+  const {email, message } = req.body;
 
   const mailOptions = {
     from: email,
     to: process.env.EMAIL,
-    subject: `Message from ${name}`,
+    subject: `New message`,
     text: message,
     replyTo: email
   };

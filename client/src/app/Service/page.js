@@ -11,6 +11,7 @@ const ServicePage = () => {
         <ul className="list-disc ml-6 text-left text-gray-300">
           <li>Responsive Website Development</li>
           <li>React.js and Next.js Development</li>
+          <li>Node.js Development</li>
           <li>Full Stack Development</li>
           <li>Mern Stack Development</li>
           <li>Custom Web Application Development</li>

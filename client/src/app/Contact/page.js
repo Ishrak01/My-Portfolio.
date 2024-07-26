@@ -34,7 +34,7 @@ const ContactPage = () => {
       if (response.ok) {
         toast.success('Message sent successfully');
         setFormData({
-          name: '',
+          
           email: '',
           message: '',
         });
@@ -58,19 +58,7 @@ const ContactPage = () => {
         <p className="text-gray-300 mb-6">Feel free to reach out if you have any questions or inquiries.</p>
 
         <form onSubmit={handleSubmit}>
-          <div className="mb-4">
-            <label htmlFor="name" className="text-gray-300 block mb-2">Name:</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              className="w-full p-2 border border-gray-500 rounded"
-              required
-              disabled={loading}
-            />
-          </div>
+         
 
           <div className="mb-4">
             <label htmlFor="email" className="text-gray-300 block mb-2">Email:</label>

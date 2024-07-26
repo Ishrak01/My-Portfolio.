@@ -45,7 +45,7 @@ export default function Navbar() {
 
 
   return (
-    <div className=' mx-auto  bg-[#111A28] justify-between items-center  text-white font-semibold sticky top-0 z-0'>
+    <div className=' mx-auto  bg-[#111827] justify-between items-center  text-white font-semibold sticky top-0 z-0'>
       <div className='justify-end flex md:mx-[120px] mx-10  gap-4 py-2 '>
         <a href="https://www.facebook.com/Hasin.Ishrak.Hisham/" target="_blank" rel="noopener noreferrer"><FacebookIcon /></a>
         <a href="https://www.instagram.com/hasin.ishrak.hisham/" target="_blank" rel="noopener noreferrer"><InstagramIcon /></a>

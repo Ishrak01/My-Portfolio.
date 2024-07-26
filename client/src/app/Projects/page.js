@@ -1,5 +1,4 @@
 "use client";
-import Image from 'next/image';
 import IntersectionApi from '../components/IntersectionApi';
 import { useGetDataQuery } from '../redux/feature/projects/projectsApi';
 
@@ -11,11 +10,11 @@ const ProjectItem = ({ project }) => {
   return (
     <div
       ref={containerRef}
-      className={`bg-white p-4 rounded shadow mb-4 transition-transform duration-500 ${
+      className={`bg-white p-4 rounded shadow mb-4 transition-transform duration-1000 ${
         isVisible ? 'transform scale-100 opacity-100' : 'transform scale-95 opacity-0'
       }`}
     >
-      <Image
+      <img
         src={project.image}
         className="w-full h-40 object-cover rounded mb-2"
         alt={project.name}
@@ -38,10 +37,10 @@ const Projects = () => {
   if (loading) {
     return (
       <div className="flex items-center justify-center bg-[#111827] h-screen">
-        <div className="rounded-full bg-white h-12 w-12 border-t-2 border-blue-500 border-opacity-50 animate-spin mr-4"></div>
+        <div className="rounded-full h-12 w-12 border-t-2 border-white border-opacity-50 animate-spin mr-4"></div>
         <div>
           <p className="text-lg font-semibold text-red-500 mb-2">Loading...</p>
-          <div className="w-48 h-4 bg-blue-500 rounded-full"></div>
+          <div className="w-48 h-4 bg-white rounded-md"></div>
         </div>
       </div>
     );
